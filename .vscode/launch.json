@@ -1,0 +1,80 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Ferdi - Test API",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/build/index.js",
+            "protocol": "inspector",
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG": "*,-engine.io*,-socket.io*"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Ferdi – Live API",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/build/index.js",
+            "protocol": "inspector",
+            "env": {
+                "USE_LIVE_API": "1",
+                "DEBUG": "*,-engine.io*,-socket.io*"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Ferdi – Local API",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/build/index.js",
+            "protocol": "inspector",
+            "env": {
+                "USE_LOCAL_API": "1",
+                "DEBUG": "*,-engine.io*,-socket.io*"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "(Win Sim) Ferdi - Test API",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/build/index.js",
+            "protocol": "inspector",
+            "env": {
+                "NODE_ENV": "development",
+                "OS_PLATFORM": "win32",
+                "DEBUG": "*,-engine.io*,-socket.io*"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "(Win Sim) Ferdi – Live API",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/build/index.js",
+            "protocol": "inspector",
+            "env": {
+                "USE_LIVE_API": "1",
+                "OS_PLATFORM": "win32",
+                "DEBUG": "*,-engine.io*,-socket.io*"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "(Win Sim) Ferdi – Local API",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/build/index.js",
+            "protocol": "inspector",
+            "env": {
+                "USE_LOCAL_API": "1",
+                "OS_PLATFORM": "win32",
+                "DEBUG": "*,-engine.io*,-socket.io*"
+            }
+        }
+    ]
+}

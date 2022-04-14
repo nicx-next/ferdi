@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a bug in Ferdi
+title: "Describe your bug"
+labels: ["bug :beetle:"]
+body:
+- type: checkboxes
+  attributes:
+    label: Avoid duplicates
+    description: Please ensure you've completed the following
+    options:
+      - label: I have searched the [issues tracker](https://github.com/getferdi/ferdi/issues) for a bug report similar to mine, in vain
+        required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: Explain to us how we can reproduce your bug on our computer
+    placeholder: |
+      1. Go to '...'
+      2. Click on '....'
+      3. Scroll down to '....'
+      4. See error
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Debug link
+    description: Get your debug link via Ferdi's "Help" > "Publish Debug Information", then share your link with us
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Screenshots
+    description: If applicable, add screenshots to help visualize your problem
+- type: textarea
+  attributes:
+    label: Additional information
+    description: If your problem needs further explanation, please add more information here
